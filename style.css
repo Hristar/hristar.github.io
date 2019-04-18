@@ -223,10 +223,12 @@ p {
     font-size: 30px;
     padding: 5px 15px;
   }
-  .joint-button,
+  .join-button-area {
+    position: static;
+  }
+  .join-button,
   .join-button-area {
     margin: 0;
     padding: 0;
-    position: static;
   }
 }
