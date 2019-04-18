@@ -229,6 +229,6 @@ p {
   .join-button,
   .join-button-area {
     margin: 0;
-    padding: 0;
+    padding: 5px;
   }
 }
