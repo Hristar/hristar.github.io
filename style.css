@@ -213,9 +213,18 @@ p {
     font-size: 40px;
   }
   nav a {
-    font-size: 22px;
+    font-size: 20px;
   }
   .social-buttons img {
     width: 45px;
+  }
+  .join-button h1 {
+    font-size: 30px;
+    padding: 5px 15px;
+  }
+  .joint-button,
+  .join-button-area {
+    margin: 0;
+    padding: 0;
   }
 }
