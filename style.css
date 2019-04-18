@@ -1,0 +1,221 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: 'Quicksand';
+  font-weight: 400;
+}
+@font-face {
+  font-family: "basic-sans";
+  src: url("https://use.typekit.net/af/fa9ffd/00000000000000003b9b0438/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/fa9ffd/00000000000000003b9b0438/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/fa9ffd/00000000000000003b9b0438/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("opentype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* HEADER */
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #2823b4ec;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+}
+nav {
+  position: absolute;
+  right: 30px;
+}
+nav li {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  font-size: 25px;
+}
+
+/* FEATURE 1 */
+
+.feature1,
+.feature2 {
+  display: flex;
+  background: linear-gradient(to bottom, #e13dff, #e83896);
+}
+.img,
+.text {
+  background: transparent;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+  font-family: "basic-sans";
+  color: white;
+}
+p {
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+}
+.img img {
+  padding: 20px;
+}
+.underline {
+  display: block;
+  background: rgb(250, 250, 250);
+  width: 80px;
+  height: 5px;
+  border-radius: 30px;
+}
+
+/* FEATURE 2 */
+
+.feature2 {
+  flex-direction: row-reverse;
+  background: #3d6bff;
+}
+.feature2 .underline {
+  transform: translateY(5px);
+}
+
+/* FEATURE 3 */
+
+.feature3 h1 {
+  color: #707070;
+  padding: 5px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+  margin-top: 15px;
+}
+.reasons {
+  display: flex;
+  align-items: space-between;
+  margin: 0 15px;
+}
+.reason {
+  width: calc(100% / 3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.reason img {
+  width: 200px;
+}
+.reason p {
+  color: #707070;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Join Button */
+
+.join-button-area {
+  position: sticky;
+  bottom: 0;
+  background-image: url("Media/topography.svg"),
+    linear-gradient(110deg, #6ed461, #6d47d9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join-button h1 {
+  color: #707070;
+  padding: 10px 30px;
+  font-size: 40px;
+}
+.join-button {
+  display: inline-flex;
+  background: wheat;
+  margin: 25px;
+  border-radius: 50px;
+  box-shadow: 0px 11px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+/* Footer */
+
+.social-buttons {
+  background: #2f2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-buttons img {
+  width: 50px;
+  padding: 30px;
+}
+.copyright {
+  background: #444a51;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.copyright p {
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  header, .logo {
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+  }
+  .logo {
+    width: 350px;
+  }
+  nav {
+    display: block;
+    background: #282485ec;
+    width:100%;
+    position: static;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .feature1,
+  .feature2,
+  .reasons {
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  nav a {
+    font-size: 22px;
+  }
+  .social-buttons img {
+    width: 45px;
+  }
+}
