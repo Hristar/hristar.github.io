@@ -49,7 +49,24 @@ a {
   color: white;
   font-size: 25px;
 }
-
+nav a:hover {
+  color:#ffffff;
+}
+nav a::before {
+  display: block;
+  background: #c5dadb;
+  content: " ";
+  height: 5px;
+  position:relative;
+  top: 40px;
+  border-radius: 10px;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform ease-in-out 200ms;
+}
+nav a:hover::before {
+  transform: scale(1, 1);
+}
 /* FEATURE 1 */
 
 .feature1,
